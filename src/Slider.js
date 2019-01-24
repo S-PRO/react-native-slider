@@ -304,7 +304,7 @@ export default class Slider extends PureComponent {
 
   _onTapOnSlider = (nativeEvent) => {
      let length = this.state.containerSize.width - this.state.thumbSize.width;
-     let thumbLeft = e.nativeEvent.locationX;
+     let thumbLeft = nativeEvent.locationX;
  
      let ratio = thumbLeft / length;
  
